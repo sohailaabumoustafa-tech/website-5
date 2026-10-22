@@ -1,0 +1,69 @@
+<html lang="ar" dir="rtl">
+<head>
+    <title>document</title>
+
+   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+<style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+</head>
+<body class="bg-gray-100">
+<header class="w-full">
+  <nav class="bg-stone-300 shadow-sm  w-full flex h-16 top-0 left-0   fixed items-center   justify-between px-5 md:px-10   z-[99999]"dir="ltr">
+<img src="./image/img1-removebg-preview.png" class="w-20 md:w-28 ml-20 ">
+
+
+<ul id="mobile" class="hidden absolute top-15 bg-white shadow-sm right-0 flex-col  border text-center  ">
+  <li class=" border "> <a href="#">كتب</a></li>
+  <li class="border "><a href="#">روايات</a></li>
+  <li class="border"> <a href="#">الاكثر مبيعا</a></li>
+  <li class="border  "> <a href="#">اتصل بينا</a></li>
+</ul>
+<button id="btn" class="  md:hidden">
+  <i class="fa-solid fa-bars text-2xl"></i> 
+</button> 
+
+  </nav>
+
+  
+<div class="  flex flex-wrap items-center justify-center mx-5 md:mx-10 mt-20 gap-3 md:gap-6" >
+<button id="addbtn"  class="   border border-gray-400 bg-stone-200 pl-5 pr-5 cursor-pointer font-bold"dir="rtl">add</button>
+
+  
+  <div class="relative w-full max-w-[280px] md:max-w-[350px]">
+  <input type="text"id="books"  class="  bg-stone-200 shadow-sm h-11 rounded-full w-full  pr-10  border border-gray-200" placeholder="ابحث عن كتاب أو رواية....">
+  
+  <i class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 "></i>
+  </div>
+  
+  <div class="flex items-center  ">
+    <span id="count"  class="font-bold ">(4)</span>
+    <img src="./image/img1-removebg-preview.png" class="w-20 md:w-24">
+    
+  </div>
+  
+</div>
+</header>
+<div class="section px-4 md:px-[5%] mt-10 ">
+  <h3 class="mb-4 text-right font-bold">الكتب المتاحة</h3>
+
+<div id="content"class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-5  ">
+  
+   
+    </div>
+  </div>
+
+
+ <script src="script/javascript.js"></script>
+</body>
+</html>
+
